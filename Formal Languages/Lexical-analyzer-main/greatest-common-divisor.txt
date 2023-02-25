@@ -1,0 +1,22 @@
+incepe
+intreg a, b, c;
+a=25;
+b=+2;
+b=+--2;
+b=-27.5;
+b=+0.00002;
+inceput
+CatTimpCe(a!=b)
+inceput
+daca(a>b)
+inceput
+a=a-b;
+stop
+altfel
+inceput
+b=b-a;
+stop
+stop
+scrie(a);
+stop
+sfarsit

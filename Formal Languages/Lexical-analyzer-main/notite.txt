@@ -1,0 +1,5 @@
+flex lex-analizer.l
+
+gcc lex.yy.c
+
+a.exe greatest-common-divisor.txt

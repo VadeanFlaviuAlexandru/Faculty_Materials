@@ -1,0 +1,13 @@
+begin -> incepe
+end   -> sfarsit
+start -> inceput
+stop  -> stop
+if    -> daca
+while -> CatTimpCe
+for   -> pentru
+write -> scrie
+read  -> citeste
+else  -> altfel
+int   -> intreg
+real  -> real
+char  -> caracter

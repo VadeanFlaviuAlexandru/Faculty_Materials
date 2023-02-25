@@ -1,0 +1,10 @@
+finite automaton := SetOfStates FiniteAlphabet TransitionFunction InitialState SetOfFinalStates
+SetOfStates := State State
+State := 'q0'|'q1'|...|'qn'
+FiniteAlphabet := Letter | Digit | Symbol | Letter Digit | Letter Symbol | Digit Symbol
+Letter := 'a'|...|'z'|'A'|...|'Z'
+Digit := '0'|...|'9'
+Symbol := '+'|'-'|'.'|'_'|
+TransitionFunction := State FiniteAlphabet State
+InitialState := 'q0'
+SetOfFinalStates := 'q1'|...|'qn'

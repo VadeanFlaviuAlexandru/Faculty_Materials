@@ -1,0 +1,48 @@
+G=(N,Σ,P,S)
+N-set of nonterminals
+Σ-set of terminals
+P-production rules
+S-start symbol
+
++
+
+Syntax
+
+=> 
+
+Σ={ ; . variabila adevarat_fals caracter numar real [ ] { } = + = * // / % listeaza daca ? atunci sfarsit altfel InTimpCe fa sfarsit pentru start stop pas < <= == <> >= > %% || 0 1 2 3 4 5 6 7 8 9 }
+S={ program }
+N={ decclist cmpdstmt declaration type IDENTIFICATOR type1 nr arraydecl stmtlist stmt simplstmt structstmt assignstmt iostmt term symbol factor expression positive-number-constant ifstmt whilestmt forstmt conditionlist}
+P={
+program ::= "variabila" decllist ";" cmpdstmt "."
+
+	decllist ::= declaration | declaration ";" decllist
+	declaration ::= "variabila" type IDENTIFICATOR
+
+	type1 ::= "adevarat_fals" | "caracter" | "numar" | "real"	
+	arraydecl ::= type1 IDENTIFICATOR "[" nr "]" 
+	type  ::= type1 | arraydecl
+
+	cmpdstmt ::= "{" stmtlist "}"
+
+	stmtlist ::= stmt | stmt ";" stmtlist
+	stmt ::= simplstmt | structstmt
+	simplstmt ::= assignstmt | iostmt
+	assignstmt ::= IDENTIFICATOR "=" expression
+	expression ::= expression symbol term | term
+	symbol ::= "+" | "-" | "*" | "//" | "/" | "%"
+	term ::= term symbol factor | factor
+	factor ::= "(" expression ")" | IDENTIFICATOR | IDENTIFICATOR "[" IDENTIFICATOR | positive-number-constant "]"
+	iostmt ::= "citeste" type IDENTIFICATOR | "listeaza" IDENTIFICATOR
+	structstmt ::= cmpdstmt | ifstmt | whilestmt | forstmt
+	ifstmt ::= "daca" "(" conditionlist ")" "?" "atunci" stmtlist "sfarsit" ["altfel" stmtlist "sfarsit"]
+	whilestmt ::= "InTimpCe" conditionlist "fa" stmtlist "sfarsit"
+	forstmt ::= "pentru" IDENTIFIER "start" IDENTIFIER "stop" IDENTIFIER ["pas" IDENTIFIER] stmtlist "sfarsit"
+	conditionlist ::= condition | condition OPERATION condition
+	condition ::= "(" expression RELATION expression ")"
+	RELATION ::= "<" | "<=" | "==" | "<>" | ">=" | ">"
+	OPERATION ::= "%%" | "||"
+	positive-number-constant ::= "0" | fara-zero-cifra {cifra} 
+	fara-zero-cifra ::= "1" | .. | "9"
+	cifra ::= "0" | fara-zero-cifra
+}
