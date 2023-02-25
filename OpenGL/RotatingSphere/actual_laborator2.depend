@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1648594867 source:c:\users\alex\desktop\grafica pe calculator\actual_laborator2\main.cpp
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<vector>
+	<fstream>
+	<windows.h>
+
+1646860843 source:c:\users\alex\desktop\grafica pe calculator\actual_laborator2\glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+
+1646857244 source:c:\users\alex\desktop\actual_laborator2\glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+
+1648584068 source:c:\users\alex\desktop\actual_laborator2\main.cpp
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<string>
+	<iostream>
+	<vector>
+	<fstream>
+	<windows.h>
+

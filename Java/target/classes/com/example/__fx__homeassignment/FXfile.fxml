@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.__fx__homeassignment.FXcontroller">
+   <children>
+      <TabPane fx:id="tabpane" layoutX="-8.0" layoutY="-5.0" prefHeight="769.0" prefWidth="997.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab1" text="Cake Request">
+            <content>
+              <AnchorPane fx:id="pane1" minHeight="0.0" minWidth="0.0" prefHeight="299.0" prefWidth="970.0">
+                     <children>
+                        <Button fx:id="cakerequestbutton" layoutX="383.0" layoutY="419.0" mnemonicParsing="false" onAction="#AddCakeRequestButton" text="Add this request">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="71.0" layoutY="14.0" prefHeight="108.0" prefWidth="829.0" text="🌸Create a cake requet🌸" textAlignment="CENTER" underline="true">
+                           <font>
+                              <Font name="Serif Italic" size="80.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="field_ownername" layoutX="299.0" layoutY="153.0" />
+                        <TextField fx:id="field_cakemodel" layoutX="678.0" layoutY="153.0" />
+                        <TextField fx:id="field_owneradress" layoutX="299.0" layoutY="197.0" />
+                        <TextField fx:id="field_phonenumber" layoutX="299.0" layoutY="240.0" />
+                        <TextField fx:id="field_cakeflavour" layoutX="678.0" layoutY="197.0" />
+                        <TextField fx:id="field_cakedesign" layoutX="678.0" layoutY="240.0" />
+                        <Label layoutX="146.0" layoutY="151.0" prefHeight="30.0" prefWidth="153.0" text="Owner's name:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="146.0" layoutY="194.0" prefHeight="30.0" prefWidth="163.0" text="Owner's adress:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="146.0" layoutY="238.0" prefHeight="30.0" prefWidth="183.0" text="Phone number:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="536.0" layoutY="151.0" prefHeight="30.0" prefWidth="183.0" text="Cake model:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="536.0" layoutY="195.0" prefHeight="30.0" prefWidth="183.0" text="Cake flavour:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="536.0" layoutY="238.0" prefHeight="30.0" prefWidth="183.0" text="Cake design:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ProgressBar fx:id="progressbar" layoutX="102.0" layoutY="362.0" prefHeight="21.0" prefWidth="768.0" progress="0.0" />
+                        <TextField fx:id="progressreport" alignment="CENTER" editable="false" layoutX="411.0" layoutY="383.0" visible="false" />
+                        <TextField fx:id="errorreport" editable="false" layoutX="628.0" layoutY="396.0" prefHeight="142.0" prefWidth="333.0" visible="false" />
+                        <Label layoutX="417.0" layoutY="278.0" prefHeight="30.0" prefWidth="31.0" text="ID:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="field_id" layoutX="448.0" layoutY="280.0" prefHeight="25.0" prefWidth="128.0" />
+                        <Button layoutX="316.0" layoutY="308.0" mnemonicParsing="false" onAction="#ClickedUpdateRequestButton" prefHeight="25.0" prefWidth="191.0" text="update request with this same id" />
+                        <Button layoutX="528.0" layoutY="308.0" mnemonicParsing="false" onAction="#ClickedminiDeleteRequestButton" prefHeight="25.0" prefWidth="191.0" text="delete request with this same id" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab2" text="Cake Request Form">
+            <content>
+              <AnchorPane fx:id="pane2" minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="pane22" minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="989.0">
+                           <children>
+                              <Button fx:id="cakeformbutton" layoutX="356.0" layoutY="419.0" mnemonicParsing="false" onAction="#AddCakeRequestFormButton" text="Add this request">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Button>
+                              <Label layoutX="60.0" layoutY="14.0" prefHeight="108.0" prefWidth="852.0" text="Create a cake requet form" textAlignment="CENTER" underline="true">
+                                 <font>
+                                    <Font name="Serif Italic" size="80.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="field_services" layoutX="184.0" layoutY="153.0" prefHeight="25.0" prefWidth="713.0" />
+                              <TextField fx:id="field_price" layoutX="184.0" layoutY="196.0" />
+                              <TextField fx:id="field_employee" layoutX="184.0" layoutY="240.0" />
+                              <Label layoutX="60.0" layoutY="151.0" prefHeight="30.0" prefWidth="153.0" text="Services:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="60.0" layoutY="193.0" prefHeight="30.0" prefWidth="183.0" text="Price:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="60.0" layoutY="238.0" prefHeight="30.0" prefWidth="183.0" text="Employee:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="614.0" layoutY="194.0" prefHeight="30.0" prefWidth="183.0" text="Date:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ProgressBar fx:id="progressbar2" layoutX="102.0" layoutY="362.0" prefHeight="21.0" prefWidth="768.0" progress="0.0" />
+                              <DatePicker fx:id="field_date" layoutX="696.0" layoutY="196.0" />
+                              <TextField fx:id="progressformreport" alignment="CENTER" editable="false" layoutX="412.0" layoutY="383.0" visible="false" />
+                              <Label layoutX="614.0" layoutY="240.0" prefHeight="30.0" prefWidth="183.0" text="form ID:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="field_formID" layoutX="697.0" layoutY="240.0" prefHeight="25.0" prefWidth="174.0" />
+                              <Label layoutX="356.0" layoutY="286.0" prefHeight="30.0" prefWidth="183.0" text="Cake ID:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="field_formcakeID" layoutX="440.0" layoutY="288.0" prefHeight="25.0" prefWidth="174.0" />
+                              <Button layoutX="697.0" layoutY="274.0" mnemonicParsing="false" onAction="#ClickedUpdateFormButton" text="update form with this same id" />
+                           </children>
+                        </AnchorPane>
+                        <TextField fx:id="errorreportform" editable="false" layoutX="638.0" layoutY="406.0" prefHeight="142.0" prefWidth="333.0" visible="false" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tab3" text="Database">
+              <content>
+                <AnchorPane fx:id="pane3" minHeight="0.0" minWidth="0.0" prefHeight="491.0" prefWidth="998.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="7.0" prefHeight="30.0" prefWidth="322.0" text="The current cake requests:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="table" layoutX="14.0" layoutY="44.0" prefHeight="233.0" prefWidth="976.0">
+                          <columns>
+                            <TableColumn fx:id="table_ID" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="table_name" prefWidth="183.0" text="Owner's Name" />
+                              <TableColumn minWidth="0.0" prefWidth="0.0" text="C1" />
+                              <TableColumn fx:id="table_adress" prefWidth="183.0" text="Owner's Adress" />
+                              <TableColumn fx:id="table_phonenumber" prefWidth="137.0" text="Phone Number" />
+                              <TableColumn fx:id="table_model" prefWidth="137.0" text="Model" />
+                              <TableColumn fx:id="table_flavour" prefWidth="137.0" text="Flavour" />
+                              <TableColumn fx:id="table_design" prefWidth="123.0" text="Design" />
+                          </columns>
+                        </TableView>
+                        <ToolBar fx:id="bar1" layoutX="246.0" layoutY="-1.0" prefHeight="45.0" prefWidth="744.0">
+                          <items>
+                              <CheckBox fx:id="report2" mnemonicParsing="false" onAction="#FilterVanillaCakes" text="Vanilla Cakes" visible="false" />
+                              <CheckBox fx:id="report1" mnemonicParsing="false" onAction="#FilterCakeRequestsFromCluj" text="Requests From Cluj" visible="false" />
+                              <Button fx:id="deletebutton" mnemonicParsing="false" onAction="#ClickedDeleteButton" text="Delete Selected Cake Request Row" visible="false" />
+                              <Button fx:id="updatebutton" mnemonicParsing="false" onAction="#ClickedUpdateTableButton" text="Enable Edit" visible="false" />
+                              <Button fx:id="refreshbutton" mnemonicParsing="false" onAction="#ClickedRefreshButton" text="Refresh" visible="false" />
+                              <Button fx:id="requestwritetotext" mnemonicParsing="false" onAction="#ClickedRequestWriteToTextButton" text="WriteToFile" />
+                              <Button fx:id="debugButton" mnemonicParsing="false" onAction="#ClickedDebugModeButton" text="Debug Mode" />
+                          </items>
+                        </ToolBar>
+                        <TableView fx:id="tableform" layoutX="14.0" layoutY="314.0" prefHeight="240.0" prefWidth="976.0">
+                           <columns>
+                              <TableColumn fx:id="table_formID" prefWidth="72.0" text="ID" />
+                              <TableColumn fx:id="table_formcakerequest" prefWidth="186.0" text="Cake Request Information" />
+                              <TableColumn fx:id="table_formservices" prefWidth="321.0" text="Services" />
+                              <TableColumn fx:id="table_formprice" prefWidth="138.0" text="Price" />
+                              <TableColumn fx:id="table_formdate" prefWidth="135.0" text="Date" />
+                              <TableColumn fx:id="table_formemployee" prefWidth="123.0" text="Employee" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="282.0" prefHeight="30.0" prefWidth="322.0" text="The current cake request forms:">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ToolBar fx:id="bar2" layoutX="363.0" layoutY="279.0" prefHeight="35.0" prefWidth="627.0">
+                          <items>
+                              <CheckBox fx:id="report5" mnemonicParsing="false" onAction="#FilterCheapCakes" text="Cheap Forms" visible="false" />
+                              <CheckBox fx:id="report4" mnemonicParsing="false" onAction="#FilterExpensiveCakes" text="Expensive Forms" visible="false" />
+                              <CheckBox fx:id="report3" mnemonicParsing="false" onAction="#FilterFormsTakenByJoe" text="Forms By Joe" visible="false" />
+                              <Button fx:id="deleteformbutton" mnemonicParsing="false" onAction="#ClickedDeleteFormButton" text="Delete Selected Cake Request Form Row" visible="false" />
+                              <Button fx:id="formwritetotext" mnemonicParsing="false" onAction="#ClickedFormWriteToTextButton" text="WriteToFile" />
+                          </items>
+                        </ToolBar>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
